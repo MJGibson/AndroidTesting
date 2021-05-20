@@ -18,8 +18,8 @@ jobs:
       before_script:
         #- cd android/AppName
         - cd TestApp
-      #script:
-      #  - ./gradlew build connectedCheck
+      script:
+        - ./gradlew build connectedCheck
 
     #- language: objective-c
     #  os: osx
