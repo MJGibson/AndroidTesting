@@ -1,3 +1,5 @@
+sudo: required
+
 jobs:
   include:
     #- language: python
@@ -30,6 +32,6 @@ jobs:
     #    - xcodebuild -workspace AppName.xcworkspace -scheme AppName
     #      -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.3' build test
 
-notifications:
-  email:
-    - M.J.Gibson@Exeter.ac.uk
+#notifications:
+#  email:
+#    - M.J.Gibson@Exeter.ac.uk
