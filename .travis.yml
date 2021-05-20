@@ -17,6 +17,8 @@ jobs:
           - tools
           - android-30
           - build-tools-30.0.3
+      before_install:
+        - chmod +x gradlew
       before_script:
         #- cd android/AppName
         - cd TestApp
