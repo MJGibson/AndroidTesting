@@ -1,6 +1,11 @@
 plugins {
     id 'com.android.application'
+    id 'jacoco'
 }
+
+
+
+
 
 android {
     compileSdkVersion 30
@@ -27,6 +32,15 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    productFlavors {
+        free {
+            applicationId 'com.dicedmelon.example.android.free'
+        }
+        paid {
+            applicationId 'com.dicedmelon.example.android'
+        }
+    }
+
 }
 
 dependencies {
