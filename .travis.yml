@@ -35,6 +35,7 @@ before_install:
 script:
 #- cd TestApp
 - ./gradlew clean test build
+- ./gradlew connectedCheck
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
