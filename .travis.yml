@@ -35,8 +35,8 @@ before_install:
     
 script:
 #- cd TestApp
-- ./gradlew clean test build createReleaseCoverageReport
-- ./gradlew jacocoDebug
+- ./gradlew clean test build
+- ./gradlew jacocoTestReport
 #- ./gradlew connectedCheck #instrucment tests
 
 after_success:
