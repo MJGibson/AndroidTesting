@@ -37,8 +37,9 @@ script:
 #- cd TestApp
 - ./gradlew clean test build
 #- ./gradlew jacocoTestReport
-- ./gradlew createDebugCoverageReport
+#- ./gradlew createDebugCoverageReport
 #- ./gradlew connectedCheck #instrucment tests
+- ./gradlew jacocoUnitTestReport
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
